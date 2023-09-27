@@ -4,21 +4,17 @@
 </title>
 
 <header>
-    <h1>Lil Poggers</h1>
+    <h1>John Romgno Personal Training</h1>
     <nav>
         <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Meet the Team</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><nuxt-link to="/">Home</nuxt-link></li>
+        <li><nuxt-link to="">Testimonials</nuxt-link></li>
+        <li><nuxt-link to="/Pricing">Pricing</nuxt-link></li>
         <li class="about" style="float:right"><a class="active" href="#">About</a></li>
         </ul>
     </nav>
 </header>
 </template>
-
-
-
-
 
 <script>
 export default {
