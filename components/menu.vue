@@ -1,36 +1,31 @@
 <template>
-<title>
-    <h1>JnR</h1>
-</title>
-
-<header>
-    <h1>John Romgno Personal Training</h1>
-    <nav>
-        <ul>
-        <li><nuxt-link to="/">Home</nuxt-link></li>
-        <li><nuxt-link to="">Testimonials</nuxt-link></li>
-        <li><nuxt-link to="/Pricing">Pricing</nuxt-link></li>
-        <li class="about" style="float:right"><a class="active" href="#">About</a></li>
-        </ul>
-    </nav>
-</header>
+  <h1>John Romgno Personal Training</h1>
+  <nav>
+    <ul>
+      <li><nuxt-link to="/">Home</nuxt-link></li>
+      <li><nuxt-link to="">Testimonials</nuxt-link></li>
+      <li><nuxt-link to="/Pricing">Pricing</nuxt-link></li>
+      <li class="about" style="float: right">
+        <a class="active" href="#">About</a>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script>
 export default {
   mounted() {
-    this.Hello()
+    this.Hello();
   },
   methods: {
     Hello() {
-        console.log('yes')
-    }
-  }
+      console.log("yes");
+    },
+  },
 };
 </script>
 
 <style>
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -69,5 +64,4 @@ li a:hover {
   background-color: rgb(0, 37, 0);
 }
 */
-
 </style>

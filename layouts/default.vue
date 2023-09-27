@@ -1,5 +1,6 @@
 <template>
-    <menu></menu>
-    
-    <nuxt></nuxt>
+  <div>
+    <Menu />
+    <slot />
+  </div>
 </template>
