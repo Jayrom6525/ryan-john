@@ -8,7 +8,7 @@
         <main class="profile-page">
             <section class="relative block h-500-px">
                 <div class="absolute top-0 w-full h-full bg-center bg-cover" style="
-            background-image: url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80');
+            background-image: url(https://images.pexels.com/photos/9958671/pexels-photo-9958671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
           ">
                     <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
                 </div>
@@ -36,8 +36,8 @@
                                 <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                                     <div class="py-6 px-3 mt-32 sm:mt-0">
                                         <button class="active bg-green-700 hover:bg-green-900 p-2 rounded-md text-white"
-                                            type="button">
-                                            Connect
+                                            type="button" @click="toggle">
+                                            About Me
                                         </button>
                                     </div>
                                 </div>
@@ -45,23 +45,23 @@
                                     <div class="flex justify-center py-4 lg:pt-4 pt-8">
                                         <div class="mr-4 p-3 text-center">
                                             <span
-                                                class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">1?</span><span
-                                                class="text-sm text-blueGray-400">Friends</span>
+                                                class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">26</span><span
+                                                class="text-sm text-blueGray-400">Age</span>
                                         </div>
                                         <div class="mr-4 p-3 text-center">
                                             <span
-                                                class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">avoided</span><span
-                                                class="text-sm text-blueGray-400">Photos</span>
+                                                class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">?</span><span
+                                                class="text-sm text-blueGray-400">?</span>
                                         </div>
                                         <div class="lg:mr-4 p-3 text-center">
                                             <span
-                                                class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">69</span><span
-                                                class="text-sm text-blueGray-400">Comments</span>
+                                                class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">5</span><span
+                                                class="text-sm text-blueGray-400">Years of Experience</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-center mt-12">
+                            <div class="text-center mt-12" v-if="showlinks">
                                 <h3 class="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
                                     John Romagno
                                 </h3>
@@ -77,7 +77,7 @@
                                     <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>Sage Colleges
                                 </div>
                             </div>
-                            <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
+                            <div class="mt-10 py-10 border-t border-blueGray-200 text-center" v-if="showlinks">
                                 <div class="flex flex-wrap justify-center">
                                     <div class="w-full lg:w-9/12 px-4">
                                         <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
@@ -90,26 +90,27 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <footer class="relative bg-blueGray-200 pt-8 pb-6 mt-8">
-                    <div class="container mx-auto px-4">
-                    <div class="flex flex-wrap items-center md:justify-between justify-center">
-                        <div class="w-full md:w-6/12 px-4 mx-auto text-center">
-                            <div class="text-sm text-blueGray-500 font-semibold py-1">
-                                Made with <a href="https://www.creative-tim.com/product/notus-js"
-                                    class="text-blueGray-500 hover:text-gray-800" target="_blank">Notus JS</a> by <a
-                                    href="https://www.creative-tim.com"
-                                    class="text-blueGray-500 hover:text-blueGray-800" target="_blank"> Creative Tim</a>.
+                            <div class="mt-10 py-10 border-t border-blueGray-200 text-center" v-if="!showlinks">
+                                stuff
                             </div>
                         </div>
                     </div>
                 </div>
-            </footer>
         </section>
     </main>
 </div></template>
 
 <script>
+    export default {
+        data() {
+            return {
+                showlinks: false
+            }
+        },
+        methods:{
+            toggle() {
+                this.showlinks = !this.showlinks
+            }
+        }
+    }
 </script>
