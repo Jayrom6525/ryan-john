@@ -48,11 +48,6 @@
                                                 class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">26</span><span
                                                 class="text-sm text-blueGray-400">Age</span>
                                         </div>
-                                        <div class="mr-4 p-3 text-center">
-                                            <span
-                                                class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">?</span><span
-                                                class="text-sm text-blueGray-400">?</span>
-                                        </div>
                                         <div class="lg:mr-4 p-3 text-center">
                                             <span
                                                 class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">5</span><span
@@ -91,14 +86,89 @@
                                 </div>
                             </div>
                             <div class="mt-10 py-10 border-t border-blueGray-200 text-center" v-if="!showlinks">
-                                stuff
+                                Helping others through health & wellness
                             </div>
                         </div>
                     </div>
                 </div>
+
+                
+<div class="py-16 white">  
+    <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+        <h2 class="mb-12 text-center text-2xl text-gray-900 font-bold md:text-4xl">What's our customers say</h2>
+        <div class="grid gap-8 md:grid-rows-2 lg:grid-cols-2">
+          <div class="row-span-2 p-6 border border-gray-100 rounded-xl bg-gray-50 text-center sm:p-8">
+            <div class="h-full flex flex-col justify-center space-y-4">
+              <img class="w-20 h-20 mx-auto rounded-full" src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/second_user.webp" alt="user avatar" height="220" width="220" loading="lazy">
+              <p class="text-gray-600 md:text-xl"> <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
+              <div>
+                  <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
+                  <span class="text-xs text-gray-500">Product Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 border border-gray-100 rounded-xl bg-gray-50 sm:flex sm:space-x-8 sm:p-8">
+            <img class="w-20 h-20 mx-auto rounded-full" src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/first_user.webp" alt="user avatar" height="220" width="220" loading="lazy">
+            <div class="space-y-4 mt-4 text-center sm:mt-0 sm:text-left">
+              <p class="text-gray-600"> <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
+              <div>
+                  <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
+                  <span class="text-xs text-gray-500">Product Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 border border-gray-100 rounded-xl bg-gray-50 sm:flex sm:space-x-8 sm:p-8">
+            <img class="w-20 h-20 mx-auto rounded-full" src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/third_user.webp" alt="user avatar" height="220" width="220" loading="lazy">
+            <div class="space-y-4 mt-4 text-center sm:mt-0 sm:text-left">
+              <p class="text-gray-600"> <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
+              <div>
+                  <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
+                  <span class="text-xs text-gray-500">Product Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<!-- component -->
+<!-- Tailwind Play: https://play.tailwindcss.com/qIqvl7e7Ww  -->
+
+
+<div class="flex min-h-screen items-center justify-start bg-white">
+    <div class="mx-auto w-full max-w-lg">
+      <h1 class="text-4xl font-medium">Contact us</h1>
+      <p class="mt-3">Email me at johnromagno@gmail.com or leave your message for me:</p>
+  
+      <form action="https://api.web3forms.com/submit" class="mt-10">
+      
+      <!-- This is a working contact form. 
+           Get your free access key from: https://web3forms.com/  -->
+  
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" /> 
+        <div class="grid gap-6 sm:grid-cols-2">
+          <div class="relative z-0">
+            <input type="text" name="name" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+            <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your name</label>
+          </div>
+          <div class="relative z-0">
+            <input type="text" name="email" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+            <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your email</label>
+          </div>
+          <div class="relative z-0 col-span-2">
+            <textarea name="message" rows="5" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" "></textarea>
+            <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your message</label>
+          </div>
+        </div>
+        <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Send Message</button>
+      </form>
+    </div>
+  </div>
         </section>
     </main>
-</div></template>
+</div>
+</template>
 
 <script>
     export default {
