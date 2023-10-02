@@ -1,15 +1,7 @@
 <template>
-  <div>
-    <Topnav />
-    <slot />
-  </div>
+  <slot />
 </template>
 
 <script>
+export default {};
 </script>
-
-<style>
-body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-</style>
