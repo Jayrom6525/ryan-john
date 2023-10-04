@@ -1,6 +1,6 @@
 <template>
     <div class="container1">
-        <!-- component -->
+        <!-- background -->
         <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
         <link rel="stylesheet"
             href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
@@ -20,6 +20,7 @@
                     </svg>
                 </div>
             </section>
+            <!-- bio card -->
             <section class="relative py-16 bg-blueGray-200">
                 <div class="container mx-auto px-4">
                     <div
@@ -35,10 +36,7 @@
                                 </div>
                                 <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                                     <div class="py-6 px-3 mt-32 sm:mt-0">
-                                        <button class="active bg-green-700 hover:bg-green-900 p-2 rounded-md text-white"
-                                            type="button" @click="toggle">
-                                            About Me
-                                        </button>
+                                        
                                     </div>
                                 </div>
                                 <div class="w-full lg:w-4/12 px-4 lg:order-1">
@@ -56,7 +54,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-center mt-12" v-if="showlinks">
+                            <div class="text-center mt-12" >
                                 <h3 class="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
                                     John Romagno
                                 </h3>
@@ -72,7 +70,7 @@
                                     <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>Sage Colleges
                                 </div>
                             </div>
-                            <div class="mt-10 py-10 border-t border-blueGray-200 text-center" v-if="showlinks">
+                            <div class="mt-10 py-10 border-t border-blueGray-200 text-center" >
                                 <div class="flex flex-wrap justify-center">
                                     <div class="w-full lg:w-9/12 px-4">
                                         <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
@@ -85,14 +83,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-10 py-10 border-t border-blueGray-200 text-center" v-if="!showlinks">
+                            <div class="mt-10 py-10 border-t border-blueGray-200 text-center" >
                                 Helping others through health & wellness
                             </div>
                         </div>
                     </div>
                 </div>
 
-                
+ <!-- testimonial cards -->                
 <div class="py-16 white">  
     <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <h2 class="mb-12 text-center text-2xl text-gray-900 font-bold md:text-4xl">What's our customers say</h2>
@@ -102,7 +100,7 @@
               <img class="w-20 h-20 mx-auto rounded-full" src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/second_user.webp" alt="user avatar" height="220" width="220" loading="lazy">
               <p class="text-gray-600 md:text-xl"> <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
               <div>
-                  <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
+                  <h6 class="text-lg font-semibold leading-none">Mike Marsich</h6>
                   <span class="text-xs text-gray-500">Product Designer</span>
               </div>
             </div>
@@ -113,7 +111,7 @@
             <div class="space-y-4 mt-4 text-center sm:mt-0 sm:text-left">
               <p class="text-gray-600"> <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
               <div>
-                  <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
+                  <h6 class="text-lg font-semibold leading-none">Ryan Taber</h6>
                   <span class="text-xs text-gray-500">Product Designer</span>
               </div>
             </div>
@@ -123,7 +121,7 @@
             <div class="space-y-4 mt-4 text-center sm:mt-0 sm:text-left">
               <p class="text-gray-600"> <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
               <div>
-                  <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
+                  <h6 class="text-lg font-semibold leading-none">Ryan Taber</h6>
                   <span class="text-xs text-gray-500">Product Designer</span>
               </div>
             </div>
@@ -131,37 +129,79 @@
         </div>
     </div>
 </div>
-
+<!-- contact card -->
 <!-- component -->
-<!-- Tailwind Play: https://play.tailwindcss.com/qIqvl7e7Ww  -->
+<div class="flex items-center justify-center p-12">
 
-
-<div class="flex min-h-screen items-center justify-start bg-white">
-    <div class="mx-auto w-full max-w-lg">
-      <h1 class="text-4xl font-medium">Contact us</h1>
-      <p class="mt-3">Email me at johnromagno@gmail.com or leave your message for me:</p>
-  
-      <form action="https://api.web3forms.com/submit" class="mt-10">
-      
-      <!-- This is a working contact form. 
-           Get your free access key from: https://web3forms.com/  -->
-  
-        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" /> 
-        <div class="grid gap-6 sm:grid-cols-2">
-          <div class="relative z-0">
-            <input type="text" name="name" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
-            <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your name</label>
-          </div>
-          <div class="relative z-0">
-            <input type="text" name="email" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
-            <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your email</label>
-          </div>
-          <div class="relative z-0 col-span-2">
-            <textarea name="message" rows="5" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" "></textarea>
-            <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your message</label>
-          </div>
+    <div class="mx-auto w-full max-w-[550px]">
+      <form action="" method="POST">
+        <div class="mb-5">
+          <label
+            for="name"
+            class="mb-3 block text-base font-medium text-[#07074D]"
+          >
+            Full Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full Name"
+            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
         </div>
-        <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Send Message</button>
+        <div class="mb-5">
+          <label
+            for="email"
+            class="mb-3 block text-base font-medium text-[#07074D]"
+          >
+            Email Address
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@domain.com"
+            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+        </div>
+        <div class="mb-5">
+          <label
+            for="subject"
+            class="mb-3 block text-base font-medium text-[#07074D]"
+          >
+            Subject
+          </label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Enter your subject"
+            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+        </div>
+        <div class="mb-5">
+          <label
+            for="message"
+            class="mb-3 block text-base font-medium text-[#07074D]"
+          >
+            Message
+          </label>
+          <textarea
+            rows="4"
+            name="message"
+            id="message"
+            placeholder="Type your message"
+            class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          ></textarea>
+        </div>
+        <div>
+          <button
+            class="hover:bg-indigo-700 rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
+          >
+            Submit
+          </button>
+        </div>
       </form>
     </div>
   </div>
@@ -171,16 +211,5 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                showlinks: false
-            }
-        },
-        methods:{
-            toggle() {
-                this.showlinks = !this.showlinks
-            }
-        }
-    }
+
 </script>
